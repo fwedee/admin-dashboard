@@ -24,7 +24,8 @@
 .sidebar .settings {
 }
 
-.sidebar p {
+.sidebar p,
+.sidebar h1 {
   color: white;
 }
 
@@ -35,10 +36,16 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.header .top {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .header img {
   border-radius: 50%;
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
 }
 
 .header .left {
@@ -52,5 +59,29 @@
 }
 
 .main {
-  background-color: bisque;
+  background-color: #e4e4e7;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.main .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.main .card {
+  background-color: white;
+}
+
+.main .announcements .announcementsCard {
+  background-color: white;
+}
+
+.main .trending {
+  grid-column: 2 / 3;
+}
+
+.main .trending .themes {
+  background-color: white;
 }
