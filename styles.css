@@ -17,16 +17,14 @@
   display: grid;
 }
 
-.sidebar .options {
-  align-self: center;
-}
-
-.sidebar .settings {
-}
-
 .sidebar p,
 .sidebar h1 {
   color: white;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
 }
 
 .header {
