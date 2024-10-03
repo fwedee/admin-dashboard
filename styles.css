@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: blue;
+  grid-row: 1/3;
+  display: grid;
+}
+
+.sidebar .options {
+  align-self: center;
+}
+
+.sidebar p {
+  color: white;
+}
+
+.header {
+  background-color: aquamarine;
+  grid-column: 2 / 3;
+}
+
+.main {
+  background-color: bisque;
+}
