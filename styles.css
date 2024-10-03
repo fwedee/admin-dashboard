@@ -40,7 +40,8 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.header img {
+.header img,
+.main .themes img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
