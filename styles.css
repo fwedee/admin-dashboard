@@ -46,6 +46,14 @@
   height: 50px;
 }
 
+.header button {
+  background-color: #008cba;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border: none;
+}
+
 .header .left {
   align-self: center;
   justify-content: center;
@@ -60,6 +68,7 @@
   background-color: #e4e4e7;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 15px;
 }
 
 .main .cards {
