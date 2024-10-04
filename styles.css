@@ -178,18 +178,6 @@
   border: none;
 }
 
-.trending .theme .icon {
-  background-color: red;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-}
-
-.trending .theme .img .header .right {
-  align-self: center;
-  justify-content: center;
-}
-
 .main {
   background-color: #e4e4e7;
   display: grid;
@@ -200,9 +188,13 @@
 .main .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 15px;
 }
 
+.main .projects {
+  grid-row: 1/3;
+}
 .main .card {
   background-color: white;
 }
@@ -246,6 +238,49 @@
   grid-column: 2 / 3;
 }
 
+.main .trending {
+  text-align: left;
+  padding-right: 25px;
+  margin-bottom: 25px;
+}
+
 .main .trending .themes {
   background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
+  line-height: 1.2rem;
+}
+
+.main .trending .themes .theme {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.main .trending .themes .theme .text {
+  padding-left: 15px;
+}
+
+.main .trending .themes .theme .text .light {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+}
+
+.main .trending .themes .theme .icon {
+  background-color: red;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .trending h2 {
+  padding-bottom: 10px;
+  font-size: 1.4rem;
 }
