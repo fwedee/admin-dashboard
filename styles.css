@@ -64,7 +64,7 @@
 }
 
 .header {
-  background-color: #38bdf8;
+  background-color: #bae6fd;
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -104,7 +104,7 @@
 .header .top .topLeft input {
   width: 100%;
   border-radius: 10px;
-  background-color: #0ea5e9;
+  background-color: #22d3ee;
   border-style: none;
   padding: 8px 200px;
 }
@@ -185,18 +185,44 @@
   gap: 20px;
 }
 
-.main .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px;
-}
-
 .main .projects {
   grid-row: 1/3;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 30px;
 }
-.main .card {
+.main .projects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.main .projects .cards .card {
   background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  line-height: 1.2rem;
+  border-left-style: solid;
+  border-left-color: orange;
+  border-left-width: 8px;
+}
+
+.main .projects .cards .card .text h3 {
+  font-size: 1.2rem;
+  color: #0c4a6e;
+}
+
+.main .projects .cards .card .text p {
+  line-height: 1.5rem;
+  margin: 15px 0px;
+}
+
+.main .projects .cards .card .icons {
+  align-self: self-end;
 }
 
 .main .announcements {
@@ -205,7 +231,8 @@
   padding-top: 30px;
 }
 
-.main .announcements h2 {
+.main .announcements h2,
+.main .projects h2 {
   padding-bottom: 10px;
   font-size: 1.4rem;
 }
